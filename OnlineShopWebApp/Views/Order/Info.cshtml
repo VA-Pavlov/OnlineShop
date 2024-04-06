@@ -1,0 +1,16 @@
+﻿<form method="post">
+    <table class="table">
+        <tr>
+            <td>ФИО: <input type="text" name="FIO" /></td>
+        </tr>
+        <tr>
+            <td>Контакты</td>
+        </tr>
+        <tr>
+            <td>Адрес: <input type="text" name="Adress" /></td>
+            <td>Номер телефона: <input type="text" name="NumberPhone" /></td>
+            <td>email: <input type="text" name="Email" /></td>
+        </tr>
+    </table>
+    <button class="btn btn-dark" type="submit" asp-controller="Order" asp-action="Result">Оплатить</button>
+</form>

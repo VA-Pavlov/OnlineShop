@@ -1,0 +1,36 @@
+﻿@using OnlineShopWebApp.Models.BagClasses
+@model Bag
+
+@if (Model == null || Model.Cost == 0)
+{
+    <h3>Корзина пустая</h3>
+}
+else
+{
+    <table class="table">
+        @foreach(var BagItem in Model.BagItems)
+        {
+            <tr>
+                <th>@BagItem.Product.ProductImage</th>
+                <th>@BagItem.Product.Name</th>
+                <th>@BagItem.Amount</th>
+                <th>@BagItem.Cost руб.</th>
+                <th>
+                    <div class="text-center">
+                        <a class="btn btn-primary" href="/bag/remove?productId=@BagItem.Product.Id"> - </a>  <a class="btn btn-primary" href="/bag/add?productId=@BagItem.Product.Id"> + </a>
+                    </div>                    
+                </th>
+            </tr>
+        }
+    </table>
+    <div class="text-right">
+        <h3>Итог:</h3>
+        <h3>@Model.Cost</h3>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-primary" href="/order/info">Оформить заказ</a>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-primary" href="/bag/clear">Очистить карзину</a>
+    </div>
+}

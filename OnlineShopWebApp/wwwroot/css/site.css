@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: url(/css/image/fjnindex.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #567CC6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #000;
+}
+
+    header li {
+        position: relative;
+        float: left;
+    }
+
+    header a {
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+        font-size: 16px;
+        display: block;
+    }
+
+        header a:hover {
+            background: white;
+            color: #000;
+        }
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    nav li {
+        position: relative;
+        float: left;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+        font-size: 16px;
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        transition: .5s;
+    }
+
+        nav a:hover {
+            transform: scale(1.2);
+        }
+
+footer {
+    line-height: 60px;
+    background: #567CC6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

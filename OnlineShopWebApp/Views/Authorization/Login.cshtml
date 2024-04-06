@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" href="/css/Authorization/LoginStyle.css" />
+<form method="post">
+    <div class="container">
+        <h1>Вход</h1>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="Email" required>
+
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Enter Password" name="Password" required>
+        <label>
+            <input type="checkbox" name="RememberMe" value="true"> Запомнить меня
+        </label>
+        <hr>
+        <button type="submit" class="registerbtn" asp-controller="Authorization" asp-action="Login">Войти</button>
+    </div>
+</form>
+<div class="container signin">
+    <p>Нет аккаунта? <a href="/Authorization/Auth">Зарегистрироваться</a></p>
+</div>

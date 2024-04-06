@@ -1,0 +1,31 @@
+﻿@using OnlineShopWebApp.Models.ProductClasses
+@model List<Product>;
+<link rel="stylesheet" href="/css/Admin/MenuStyle.css" />
+<div class="sidenav">
+    <a href="/Admin/Orders">Заказы</a>
+    <a href="/Admin/Users">Пользователи</a>
+    <a href="/Admin/Roles">Роли</a>
+    <a href="/Admin/Products">Продукты</a>
+</div>
+
+<div class="main">
+    
+    @if (Model?.Count > 0)
+    {
+        <h2>Продукты</h2>
+        <table class="table">
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <th>@product.Id </th>
+                    <th>@product.Name</th>
+                    <th>@product.Cost</th>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <h2>Продукты</h2>
+    }
+ </div>

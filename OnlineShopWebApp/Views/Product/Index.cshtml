@@ -1,0 +1,27 @@
+﻿@using OnlineShopWebApp.Models.ProductClasses
+@model Product
+@{
+    ViewData["Title"] = "Product Page";
+}
+<link href="/css/ProductStily.css" rel="stylesheet" />
+<h1>@Model.Name</h1>
+<div class="info">
+    <ul>
+        <li>Длительность </li>
+		<li>@Model.TravelDuration</li>
+    </ul>
+    <ul>
+        <li>Сложность</li>
+		<li>@Model.RouteDifficulty</li>
+    </ul>
+    <ul>
+        <li>Свободно мест</li>
+        <li>@Model.Group</li>
+    </ul>
+    <ul>
+        <li>Цена: @Model.Cost руб.</li>
+        <li><a class="btn btn-dark" href="/bag/add?productId=@Model.Id" role="button">Добавить в корзину</a></li>
+    </ul>
+</div>
+<div class="model">@Model</div>
+    

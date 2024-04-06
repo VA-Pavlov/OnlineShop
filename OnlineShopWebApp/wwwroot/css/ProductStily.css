@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.info {
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: #BCE4FD;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+  button{
+    background-color: #567CC6;
+    color: #ffffff;
+  }
+ul{
+  margin-right: 30px;
+}
+ul:last-child{
+  margin-left: 0px;
+}
+li{
+  margin-bottom: 10px;
+}
+.model {
+    background-color: whitesmoke;
+    margin-bottom: 100px;
+}
